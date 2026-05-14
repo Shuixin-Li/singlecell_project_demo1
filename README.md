@@ -1,1 +1,6 @@
-# demo_project
+.
+├── README.md
+└── introduction
+    ├── data
+    ├── results
+    └── scripts
