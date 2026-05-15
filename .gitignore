@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Conda
+.env
+.venv
+
+# Logs
+*.log
+
+# Temp files
+tmp/
+temp/
+
+# Results
+results/
+output/
+
+# Data
+data/
+datasets/
+
+# Sequencing files
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+*.vcf.gz
+
+# R
+.Rhistory
+.RData
+
+# Mac/Linux
+.DS_Store

@@ -1,0 +1,17 @@
+name: sc_lung_project
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.9
+  - scanpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - python-igraph
+  - louvain
+  - leidenalg
+  - pip
+  - pip:
+    - scanpy[leiden]
