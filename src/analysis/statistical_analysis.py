@@ -2,13 +2,15 @@ import scanpy as sc
 
 def find_marker_genes(adata, method='wilcoxon'):
     """
-    Identify marker genes for each cluster. 
-    Methodology follows the standard differential expression testing 
-    used in the Kidney Atlas (Lake et al. 2023).
+    Identify marker genes and compute cluster hierarchy.
     """
     print(f"Status: Finding marker genes using {method}...")
     
-    # Rank genes using the specified statistical test
+    # 1. 计算差异表达
     sc.tl.rank_genes_groups(adata, 'leiden', method=method)
+    
+    # 2. 手动计算树状图，消除 Warning (体现专业性)
+    print("Status: Computing cluster dendrogram...")
+    sc.tl.dendrogram(adata, groupby='leiden')
     
     return adata
