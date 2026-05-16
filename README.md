@@ -64,6 +64,11 @@ This project is divided into two phases: **Faithful Reproduction** of the origin
 - `results/`: 关键分析图表及差异表达基因列表。
 
 ---
+## 📈 Project Status / 项目状态
+- [x] Phase 0: Project directory structure and Conda environment setup. (项目目录结构与环境配置已完成)
+- [x] Phase 1.1: Automated pipeline data retrieval script implemented. (数据自动化获取脚本已部署)
+- [x] Phase 1.2: Raw data downloading and local verification completed. (数据已成功拉取并通过本地验证)
+- [/] Phase 1.3: Quality Control & Preliminary Scanpy AnnData object initialization... (正在进行：质控与 AnnData 对象初始化)
 
 ## 🚀 Quick Start / 快速开始
 
