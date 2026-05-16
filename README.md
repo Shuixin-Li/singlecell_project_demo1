@@ -38,8 +38,7 @@ python main.py
 │   └── figures/        # Automatically generated plots (UMAP, Marker Genes)
 ├── src/                # Source code
 │   ├── preprocess/     # Modules for Quality Control and Normalization
-│   ├── analysis/       # Dimensionality reduction and clustering logic
-│   └── visualization/  # Custom plotting functions
+│   └── analysis/       # Dimensionality reduction and clustering logic
 ├── scripts/            # Utility scripts (e.g., Data Download)
 ├── environment.yml     # Conda environment definition
 ├── main.py             # Pipeline entry point

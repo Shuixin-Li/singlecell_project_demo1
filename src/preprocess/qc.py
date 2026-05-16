@@ -3,8 +3,7 @@ import os
 
 def run_pipeline_qc(adata, min_genes=200, min_cells=3, max_mito=5):
     """
-    Quality Control and Normalization following professional standards.
-    Logic inspired by Lake et al. (Nature 2023) kidney atlas processing.
+    Quality Control and Normalization
     """
     print(f"Status: Starting QC with {adata.n_obs} cells...")
 
