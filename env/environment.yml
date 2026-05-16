@@ -2,6 +2,7 @@ name: sc_lung_project
 channels:
   - conda-forge
   - bioconda
+  - defaults
 dependencies:
   - python=3.9
   - scanpy
@@ -12,6 +13,9 @@ dependencies:
   - python-igraph
   - louvain
   - leidenalg
+  - jupyterlab
+  - ipympl
+  - nodejs
   - pip
   - pip:
     - scanpy[leiden]
