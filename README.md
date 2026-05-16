@@ -46,3 +46,10 @@ python main.py
 └── README.md           # Project documentation
 ```
 
+## 📈 Key Results
+
+Upon execution, the pipeline generates high-resolution figures in `results/figures/`:
+
+1. **`final_annotated_umap.png`**: The final map showing identified cell populations.
+2. **`marker_genes_dotplot.png`**: Statistical ranking of cluster-specific genes, used for biological validation.
+3. **`umap_clusters.png`**: Unsupervised clustering before annotation.
