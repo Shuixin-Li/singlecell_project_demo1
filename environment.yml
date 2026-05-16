@@ -16,3 +16,5 @@ dependencies:
       - python-igraph
       - louvain
       - leidenalg
+      - harmonypy
+      - scanorama
