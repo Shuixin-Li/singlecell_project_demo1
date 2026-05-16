@@ -68,7 +68,11 @@ This project is divided into two phases: **Faithful Reproduction** of the origin
 - [x] Phase 0: Project directory structure and Conda environment setup. (项目目录结构与环境配置已完成)
 - [x] Phase 1.1: Automated pipeline data retrieval script implemented. (数据自动化获取脚本已部署)
 - [x] Phase 1.2: Raw data downloading and local verification completed. (数据已成功拉取并通过本地验证)
-- [/] Phase 1.3: Quality Control & Preliminary Scanpy AnnData object initialization... (正在进行：质控与 AnnData 对象初始化)
+- [x] **Phase 1.3: Quality Control & Normalization.** (质控与标准化已完成)
+    - **Normalization**: 采用与文献一致的 TPM-like 归一化 ($10^6$) 及 $log1p$ 转换。
+    - **HVG Selection**: 成功筛选约 7000 个高变基因，并验证捕获到核心耗竭标志物 ***LAYN*** 与 ***PHLDA1***。
+    - **Dim Reduction**: 完成 PCA 降维，并通过碎石图 (Scree Plot) 确定前 15 个主成分 (PCs) 为后续分析的最优阈值。
+- [/] **Phase 1.4: Clustering & Subpopulation Identification.** (正在进行：细胞聚类与亚群鉴定)
 
 ## 🚀 Quick Start / 快速开始
 
@@ -76,3 +80,11 @@ This project is divided into two phases: **Faithful Reproduction** of the origin
    ```bash
    git clone [https://github.com/Shuixin-Li/singlecell_project.git](https://github.com/Shuixin-Li/singlecell_project.git)
    cd singlecell_project
+   ```
+2. **Environment Setup / 环境配置**
+   ```bash
+   conda env create -f env/environment.yml
+   conda activate sc_lung_project
+   ```
+
+
