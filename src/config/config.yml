@@ -1,0 +1,15 @@
+project_name: "singlecell_demo_advanced"
+paths:
+  raw_data: "data/raw/pbmc_raw.h5ad"
+  processed_data: "data/processed/pbmc_final.h5ad"
+  figures: "results/figures/"
+
+qc_params:
+  min_genes: 200
+  max_mito: 5
+
+analysis_params:
+  n_neighbors: 15
+  n_pcs: 40
+  resolution: 0.8
+  integration_method: "harmony" # options: none, harmony, scanorama
